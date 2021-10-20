@@ -16,22 +16,39 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <h1 className="bg-dark text-light main-title">Cryptomania</h1>
+          <table class="table table-dark">       
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Price</th>
+                <th scope="col">Sentiment Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Bitcoin</td>
+                <td>BTC</td>
+                <td>64,000</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td scope="row">Ethereum</td>
+                <td>ETH</td>
+                <td>3,800</td>
+                <td>82</td>
+              </tr>
+              <tr>
+                <td scope="row">Solana</td>
+                <td>SOL</td>
+                <td>150</td>
+                <td>55</td>
+              </tr>
+            </tbody>
+        </table>
     </div>
-  );
+  )
 }
 
 export default App;
