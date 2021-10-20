@@ -1,7 +1,19 @@
+import { useEffect } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
+  const fetchTokens = async () => {
+    const URL_BASE = `${process.env.REACT_APP_API_URL}`
+    const { data } = await axios.get(URL_BASE + '/api/tokens')
+  }
+
+  useEffect(() => { 
+    fetchTokens()
+  })
+
   return (
     <div className="App">
       <header className="App-header">
